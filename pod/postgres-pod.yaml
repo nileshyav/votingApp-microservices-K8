@@ -15,8 +15,10 @@ spec:
     - name: POSTGRES_USER
       valueFrom:
         secretKeyRef:
+          name: mysecret
           key: user
     - name: POSTGRES_PASSWORD
       valueFrom:
         secretKeyRef:
+          name: mysecret
           key: password
