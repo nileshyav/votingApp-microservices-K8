@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: worket-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
       name: worker-app-pod
